@@ -1,4 +1,5 @@
 <?php
+namespace Gematria;
 
 class Gematria {
     const LETTER_VALUES = [

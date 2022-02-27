@@ -2,6 +2,13 @@
     "name": "amiad/gematria",
     "description": "Simple Gematria library for PHP - convert Hebrew letters to numbers",
     "type": "library",
+    "keywords": [
+        "Jewish",
+        "Hebrew",
+        "conversion",
+        "converter",
+        "gematria"
+    ],
     "homepage": "https://github.com/amiad/gematria",
     "license": "gpl",
     "authors": [
@@ -9,5 +16,14 @@
             "name": "Amiad Bareli"
         }
     ],
+    "autoload": {
+		"psr-4": {
+			"Gematria\\": ""
+		}
+	},
+    "support": {
+        "issues": "https://github.com/amiad/gematria/issues",
+        "source": "https://github.com/amiad/gematria"
+	},
     "require": {}
 }
