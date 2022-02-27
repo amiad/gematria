@@ -2,11 +2,8 @@
 namespace Gematria;
 
 class Gematria {
-    const LETTER_VALUES = [
-        1 => 'אבגדהוזחט',
-        10 => 'יכלמנסעפצ',
-        100 => 'קרשת',
-    ];
+    
+    const LETTERS = 'אבגדהוזחטיכלמנסעפצקרשת';
     const FINAL_LETTERS = 'םןץפך';
     
     function __construct($text) {
@@ -15,12 +12,12 @@ class Gematria {
             if (strpos(SELF::FINAL_LETTERS, $letter) !== false){
                 $letter = mb_chr(mb_ord($letter) + 1); // convert final letter to regular
             }
-            foreach (SELF::LETTER_VALUES as $value => $letters){
-                $position = mb_strpos($letters, $letter);
-                if ($position !== false){
-                    $sum += ($position + 1) * $value;
-                    break;
-                }
+            $position = mb_strpos(SELF::LETTERS, $letter);
+            if ($position !== false){
+                $counter = $position % 9 + 1;
+                $power = intdiv($position, 9) ;
+                
+                $sum += (10 ** $power) * $counter;
             }
         }
 
