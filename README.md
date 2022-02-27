@@ -13,5 +13,5 @@ echo $gematria->get(); // print 12380
 echo $gematria;
 ```
 
-##License
+## License
 GPL
