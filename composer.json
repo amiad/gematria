@@ -18,9 +18,9 @@
         }
     ],
     "autoload": {
-		"psr-4": {
-			"Gematria\\": ""
-		}
+        "files": [
+            "gematria.php"
+        ]
 	},
     "support": {
         "issues": "https://github.com/amiad/gematria/issues",
