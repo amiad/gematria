@@ -7,7 +7,7 @@ class Gematria {
         10 => 'יכלמנסעפצ',
         100 => 'קרשת',
     ];
-    const FINAL_LETTERS = 'םןץפך';
+    const FINAL_LETTERS = 'םןץףך';
     
     function __construct($text) {
         $sum = 0;
