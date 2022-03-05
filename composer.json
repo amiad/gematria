@@ -1,7 +1,7 @@
 {
     "name": "amiad/gematria",
     "description": "Simple Gematria library for PHP - convert Hebrew letters to numbers",
-    "version": "1.2",
+    "version": "1.3.1",
     "type": "library",
     "keywords": [
         "Jewish",
